@@ -31,7 +31,7 @@ const Popup = () => {
 
   return (
     <div className={`popup ${status}`}>
-      <button className="popup__button" onClick={() => handleClose()}>
+      <button className='popup__button' onClick={() => handleClose()}>
         X
       </button>
       <Asset type={type} asset={asset} title={title} />
@@ -43,12 +43,18 @@ const Popup = () => {
 const Asset = ({ type, asset, title }: AssetProps) => {
   if (type === 'video') {
     return (
-      <div className="popup__video-container">
-        <iframe title="Video" src={asset} className="popup__video" />
+      <div className='popup__video-container'>
+        <iframe
+          title='Video'
+          src={asset}
+          className='popup__video'
+          allowTransparency
+          allowFullScreen
+        />
       </div>
     );
   }
 
-  return <img className="popup__game" src={asset} alt={title} />;
+  return <img className='popup__game' src={asset} alt={title} />;
 };
 export default Popup;
