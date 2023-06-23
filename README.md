@@ -10,7 +10,7 @@ As configurações dos Popups são armazenadas no arquivo `configuration-data.js
 - `subtitle`: Define o subtítulo do Popup
 - `asset`: Define a url da imagem ou do vídeo do Popup
 - `consentCheckbox`: Define o consentimento ou não para coleta de dados, sendo no caso marcado necessário atribuir o valor true, e no caso contrário atribuir o valor false.
-- activatedFields: Objeto que possui as chaves email, name, phone e gender, em que atribuindo true as chaves habilita o campo no formulário do Popup, e no caso contrário desabilita.
+- `activatedFields`: Objeto que possui as chaves email, name, phone e gender, em que atribuindo true as chaves habilita o campo no formulário do Popup, e no caso contrário desabilita.
 
 ## Como executar
 
