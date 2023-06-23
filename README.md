@@ -1,46 +1,23 @@
-# Getting Started with Create React App
+# Popup
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este repositório foi criado como parte de um desafio técnico. O objetivo era desenvolver dois Popups customizáveis, um para exibir um jogo de caça-níquel e outro para exibir um vídeo. As opções de configuração são definidas em um arquivo JSON, permitindo a flexibilidade de escolher as características de cada Popup.
 
-## Available Scripts
+## Configuração
 
-In the project directory, you can run:
+As configurações dos Popups são armazenadas no arquivo `configuration-data.json`. Este arquivo contém as seguintes opções:
 
-### `npm start`
+- `type`: Define se o que vai ser exibido é o jogo ou vídeo, bastando mudar o valor para "game" ou "video"
+- `title`: Define o título do Popup
+- `subtitle`: Define o subtítulo do Popup
+- `asset`: Define a url da imagem ou do vídeo do Popup
+- `consentCheckbox`: Define o consentimento ou não para coleta de dados, sendo no caso marcado necessário atribuir o valor true, e no caso contrário atribuir o valor false.
+- `activatedFields`: Objeto que possui as chaves email, name, phone e gender, em que atribuindo true as chaves habilita o campo no formulário do Popup, e no caso contrário desabilita.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Como executar
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Para executar a aplicação, você precisa ter o Yarn instalado. Siga os passos abaixo:
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Abra o terminal na pasta raiz do projeto.
+2. Execute o comando `yarn install` para instalar as dependências.
+3. Após a conclusão da instalação, execute o comando `yarn start` para iniciar a aplicação.
+4. O Popup será exibido no navegador de sua preferência, de acordo com as configurações definidas no arquivo `config.json`.
