@@ -1,0 +1,104 @@
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.popup__wrapper-open {
+  animation-name: slideIn;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  left: 1em;
+}
+
+.popup__wrapper-close {
+  animation-name: slideOut;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  left: 0;
+}
+
+.popup__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 24px;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.popup {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 2em;
+  bottom: 3em;
+  z-index: 999;
+  display: flex;
+  bottom: 3em;
+  width: 70vw;
+  max-width: 840px;
+  transform: translateX(-100%);
+  background: linear-gradient(to top, #000000, #ca3726);
+}
+
+.popup__title {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.popup__subtitle {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.popup__game {
+  font-size: 16px;
+  margin-top: 10px;
+  max-width: 50%;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.popup__video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  margin-top: 20px;
+}
+
+.popup__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .popup {
+    flex-direction: column-reverse;
+  }
+  .popup__game {
+    max-width: 80%;
+  }
+}

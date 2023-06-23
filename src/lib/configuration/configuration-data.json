@@ -1,0 +1,27 @@
+{
+  "type": "game",
+  "game": {
+    "title": "Ganhe até 10% OFF agora!",
+    "subtitle": "Preencha para receber seu cupom",
+    "asset": "/caca-niquel.png",
+    "consentCheckbox": true,
+    "activatedFields": {
+      "email": true,
+      "name": true,
+      "phone": true,
+      "gender": true
+    }
+  },
+  "video": {
+    "title": "Ganhe até 10% OFF agora!",
+    "subtitle": "Preencha para receber seu cupom por e-mail",
+    "asset": "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_2mb.mp4",
+    "consentCheckbox": false,
+    "activatedFields": {
+      "email": true,
+      "name": true,
+      "phone": true,
+      "gender": true
+    }
+  }
+}
